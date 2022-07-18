@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintTop"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtFileName"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External Storage >"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/btnAddFolder"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_add_folder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/color_icons" />
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/btnAddFile"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/ic_add_file"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnAddFolder"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/color_icons" />
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/btnList"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/ic_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnAddFile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/color_icons" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:background="@color/color_gray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintTop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMain"
+        android:visibility="visible"
+        tools:listitem="@layout/item_files_linear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <ImageView
+        android:id="@+id/imgEmptyFile"
+        android:visibility="visible"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/img_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

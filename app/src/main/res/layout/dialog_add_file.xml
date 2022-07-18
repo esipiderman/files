@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="12dp"
+    android:layout_margin="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtTitleDialogFile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Create new file"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtFile"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="enter your file name"
+        app:layout_constraintTop_toBottomOf="@id/txtTitleDialogFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="12dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtFile"
+        app:layout_constraintEnd_toStartOf="@id/btnConfirmFile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnCancelFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:text="Create"
+        app:layout_constraintStart_toEndOf="@id/btnCancelFile"
+        app:layout_constraintTop_toTopOf="@id/btnCancelFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnCancelFile"
+        android:id="@+id/btnConfirmFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
