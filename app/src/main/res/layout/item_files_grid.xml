@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
+    android:backgroundTint="@color/white"
     android:layout_margin="10dp"
     android:clickable="true"
     android:focusable="true"
@@ -21,6 +22,7 @@
             android:layout_height="46dp"/>
 
         <TextView
+            android:textColor="@color/color_icons"
             android:gravity="center"
             android:layout_marginTop="16dp"
             android:id="@+id/txtNameItem"

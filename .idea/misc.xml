@@ -25,6 +25,13 @@
         <entry key="..\:/kotlin/Files/app/src/main/res/layout/item_files.xml" value="0.536" />
         <entry key="..\:/kotlin/Files/app/src/main/res/layout/item_files_grid.xml" value="0.25416666666666665" />
         <entry key="..\:/kotlin/Files/app/src/main/res/layout/item_files_linear.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/dialog_add_file.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/dialog_add_folder.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/dialog_delete_file.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/fragment_file.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/item_files_grid.xml" value="0.25416666666666665" />
+        <entry key="..\:/kotlin/Files/files/app/src/main/res/layout/item_files_linear.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

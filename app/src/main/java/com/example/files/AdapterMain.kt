@@ -52,11 +52,11 @@ class AdapterMain(private val data :ArrayList<File>, val fileEvent: FileEvent):R
                         img.setImageResource(R.drawable.ic_pdf)
                         fileType = "application/pdf"
                     }
-                    recognizeFile(item.path, "application/msword")->{
+                    isWord(item.path)->{
                         img.setImageResource(R.drawable.ic_word)
                         fileType = "application/msword"
                     }
-                    recognizeFile(item.path, "application/vnd.ms-excel")->{
+                    isExel(item.path)->{
                         img.setImageResource(R.drawable.ic_exel)
                         fileType = "application/vnd.ms-excel"
                     }
@@ -105,6 +105,14 @@ class AdapterMain(private val data :ArrayList<File>, val fileEvent: FileEvent):R
     fun recognizeFile(path: String?, type :String): Boolean {
         val mimeType = URLConnection.guessContentTypeFromName(path)
         return mimeType != null && mimeType.startsWith(type)
+    }
+    fun isWord(path: String):Boolean{
+        val mimeType = URLConnection.guessContentTypeFromName(path)
+        return mimeType != null && mimeType.startsWith("application/msword") || path.contains(".docx")
+    }
+    fun isExel(path: String):Boolean{
+        val mimeType = URLConnection.guessContentTypeFromName(path)
+        return mimeType != null && mimeType.startsWith("application/vnd.ms-excel") || path.contains(".xlsx")
     }
 
     fun addFile(newFile: File){

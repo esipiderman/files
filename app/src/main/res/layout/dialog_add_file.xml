@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:padding="12dp"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:padding="12dp"
     android:layout_margin="12dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -7,6 +9,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/txtTitleDialogFile"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,6 +19,8 @@
         android:layout_height="wrap_content"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeColor="@color/purple_500"
+        android:textColorHint="@color/color_icons"
         android:id="@+id/edtFile"
         android:layout_marginTop="12dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

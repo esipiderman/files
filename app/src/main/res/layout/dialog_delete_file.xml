@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:padding="12dp"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:padding="12dp"
     android:layout_margin="12dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
